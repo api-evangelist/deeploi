@@ -1,7 +1,26 @@
 aid: deeploi
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/deeploi.png
 name: Deeploi
-description: 'Deeploi is a company surfaced as a portfolio company of atomico and added to the API Evangelist
-  network as a stub for enrichment. Sector: saas. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Deeploi (deeploi GmbH) is a Berlin-based all-in-one IT management (ITSM)
+  platform for mid-sized businesses and startups, primarily across the DACH region.
+  It centralizes employee onboarding and offboarding, device and inventory management,
+  software and license/account administration, cybersecurity and compliance policies,
+  and unlimited expert IT support in a single dashboard priced per active employee.
+  Deeploi operates an Information Security Management System aligned with ISO/IEC 27001
+  and is GDPR compliant, publishing its posture through a Kertos-powered Trust Center.
+  The company is backed by Atomico. Deeploi does not currently publish a public developer
+  API; this profile captures its identity, security posture, and public web properties.'
 url: https://raw.githubusercontent.com/api-evangelist/deeploi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +30,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-- Saas
+- SaaS
+- IT Management
+- ITSM
+- Device Management
+- Employee Onboarding
+- Cybersecurity
+- Compliance
+- DACH
+- MDM
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +49,32 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TrustCenter
+  url: security/deeploi-trust-center.yml
+- type: DomainSecurity
+  url: security/deeploi-domain-security.yml
 - type: Website
-  url: https://www.deeploi.com
+  url: https://www.deeploi.io
+- type: Documentation
+  url: https://docs.deeploi.io/en/docs/platform/get-started
+- type: HelpCenter
+  url: https://docs.deeploi.io
+- type: Pricing
+  url: https://www.deeploi.io/pricing
+- type: Blog
+  url: https://www.deeploi.io/magazine
+- type: Login
+  url: https://app.deeploi.io/dashboard
+- type: PrivacyPolicy
+  url: https://www.deeploi.io/legal/privacy-policy
+- type: Security
+  url: https://www.deeploi.io/legal/security
+- type: Compliance
+  url: https://www.deeploi.io/legal/security
+- type: Conformance
+  url: conformance/deeploi-conformance.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

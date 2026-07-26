@@ -1,0 +1,22 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.deeploi.io/legal/security
+note: 'Deeploi publishes no OpenAPI or developer API; standards below reflect its
+  published organizational security and privacy compliance posture, not API-level
+  protocol conformance.'
+standards:
+- id: gdpr
+  conforms: true
+  evidence: DSGVO/GDPR compliance stated on legal/security + /compliance pages and
+    Kertos Trust Center
+- id: iso-27001
+  conforms: true
+  evidence: Deeploi states it operates an Information Security Management System (ISMS)
+    in alignment with ISO/IEC 27001
+- id: soc2
+  conforms: false
+- id: oauth2
+  conforms: false
+  evidence: no public API / securitySchemes published
+- id: rfc9457-problem-details
+  conforms: false
