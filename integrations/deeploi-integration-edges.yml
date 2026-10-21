@@ -1,0 +1,37 @@
+edges:
+- partner_name: Apple Partner Network
+  partner: apple
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://partnernetwork.apple.com/de/partnerprofile/13698
+  category: Apple business / technical partner
+  partner_tier: Technical Partner
+  contract_reference:
+    register: Apple Partner Network partner discovery (partnernetwork.apple.com)
+    standard: Apple Partner Network
+    spec_file: null
+    role: apple-partner-network
+    registered_name: deeploi
+    register_id: '13698'
+    matched_domain: deeploi.io
+    matched_by: domain
+    country: DE
+    identity_source: the register's own website field for the partner (no lookup)
+    signal_note: 'participation only: partner type is partner_tier, never counted'
+    detected_by: sweep-apple-mfi-ecosystem.py
+    detected: '2026-10-21'
+  detected_by: sweep-apple-mfi-ecosystem.py
+  first_seen: '2026-10-21'
+generated: '2026-10-21'
+method: searched
+source:
+- https://mfi.apple.com/en/account/accessory-search
+- https://partnernetwork.apple.com/
+- https://csa-iot.org/csa-iot_products/
+checked:
+- https://csa-iot.org/csa-iot_products/
+- https://mfi.apple.com/en/account/accessory-search
+- https://partnernetwork.apple.com/
